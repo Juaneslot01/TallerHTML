@@ -1,29 +1,113 @@
 <!DOCTYPE html>
 <html>
+
  <head>
-    <title>Mi página personal</title>
+    <link rel ="stylesheet" href="lib/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title> ¡Contendientes NBA! </title>
+    <style>
+        body {
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0); 
+        }
+        .car {
+            margin-bottom: 20px;
+        }
+        .car img {
+            width: 190px;
+            height: 100px;
+        }
+        .car .specifications {
+            margin: 10px 0;
+        }
+        .car .rating {
+            margin: 10px 0;
+        }
+    </style>
  </head>
+
  <body>
-  <h1>Mi página personal</h1>
-  <h2>¡Hola!</h2>
-  <p>
-    Bienvenido a mi página personal. Soy Kelly, me gusta enseñar Ing de Sw a niñ@s y jóvenes. En esta página, compartiré información sobre mí.
-  </p> 
-  <img src="img/WallpaperDISC.png" alt="Mi Foto" width="500" height="333">
-  <table>
-    <tr>
-        <th>Lenguajes de programación</th>
-        <th>Idiomas</th>
-        <th>Hobbies</th>
-    </tr>
-    <tr>
-        <td>Java, Python</td>
-        <td>Español, Inglés, Francés</td>
-        <td>Pilates</td>
-    </tr>
-  </table>  
-  <p>
-  <a href="https://profesores.virtual.uniandes.edu.co/kjgarces971/es/inicio/" target="_blank">Página institucional</a>
-  </p>
+
+  <div class="headerContainer">
+    <img src="img/NBA_logo.png" alt="Logo" style="display: block; margin-left: auto; margin-right: auto; width: 20%;">
+  </div>
+
+  <h1>
+    Los contendientes a campeon de la NBA:
+  </h1>
+
+  <div class="row">
+    <div class="col car">
+      <img src="img/Boston_Celtics.png" alt="Boston Celtics">
+      <p>
+        Para mas información:
+      <a href="https://www.nba.com/celtics/" target="_blank"> Boston Celtics</a>
+      </p>
+      <ul class="Titulares">
+        <li>PG: Jrue Holiday</li>
+        <li>SG: Derrick White</li>
+        <li>SF: Jaylen Brown</li>
+        <li>PF: Jayson Tatum</li>
+        <li>C: Kristaps Porzingis</li>
+        <li>Record Actual: 62W 17L</li>
+      </ul>
+    </div>
+
+    <div class="col car">
+      <img src="img/Timberwolves_logo.svg" alt="Minnesota Timberwolves">
+      <p>
+        Para mas información:
+      <a href="https://www.nba.com/timberwolves/" target="_blank"> Minnesota Timberwolves</a>
+      </p>
+      <ul class="Titulares">
+        <li>PG: Mike Conley</li>
+        <li>SG: Anthony Edwards</li>
+        <li>SF: Jaden McDaniels</li>
+        <li>PF: Karl-Anthony Towns (Lesionado)</li>
+        <li>C: Rudy Gobert</li>
+        <li>Record Actual: 55W 24L</li>
+      </ul>
+    </div>
+
+    <div class="col car">
+      <img src="img/Denver_Nuggets.png" alt="Denver Nuggets">
+      <p>
+        Para mas información:
+      <a href="https://www.nba.com/nuggets/" target="_blank"> Denver Nuggets</a>
+      </p>
+      <ul class="Titulares">
+        <li>PG: Jamal Murray</li>
+        <li>SG: Kentavious Caldwell-Pope</li>
+        <li>SF: Michael Porter Jr.</li>
+        <li>PF: Aaron Gordon</li>
+        <li>C: Nikola Jokic</li>
+        <li>Record Actual: 55W 24L</li>
+      </ul>
+    </div>
+
+    <div class="col car">
+      <img src="img/Oklahoma_City_Thunder.png" alt="Oklahoma City Thunder">
+      <p>
+        Para mas información:
+      <a href="https://www.nba.com/thunder/" target="_blank"> Oklahoma City Thunder</a>
+      </p>
+      <ul class="Titulares">
+        <li>PG: Shai Gilgeous-Alexander</li>
+        <li>SG: Josh Giddey</li>
+        <li>SF: Luguentz Dort</li>
+        <li>PF: Jalen Williams</li>
+        <li>C: Chet Holmgren</li>
+        <li>Record Actual: 55W 24L</li>
+      </ul>
+    </div>
+  </div>
+
+  <h1>Suscríbete para recibir más información</h1>
+  <form>
+    <label for="email">Correo electrónico:</label><br>
+    <input type="email" id="email" name="email"><br>
+    <input type="submit" value="Suscribirse">
+  </form>
+  
   </body>
 </html>
